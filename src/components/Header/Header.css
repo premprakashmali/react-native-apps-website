@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.main-header {
+    position: relative; 
+    z-index: 10;
+    color: white;
+    width: 100%; 
+    top: 0; 
+}
+
+
+.top-header {
+    text-align: right;
+}
+
+.top-header h2 {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.info {
+    margin-right: 70px;
+}
+
+.navbar {
+    margin: 10px;
+    background-color: rgba(52, 50, 50, 0.379);
+}
+
+.navbar li a {
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+    margin: 10px;
+
+}
+
+.nav-item {
+    position: relative;
+}
+
+.dropdown-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    z-index: 1050;
+    min-width: 200px;
+}
+
+
+.dropdown-menu li a:hover {
+    background-color: #f0f0f0;
+    color: #ff5500;
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link:hover {
+    color: #ddd;
+}
+
+.fa-caret-down {
+    margin-left: 5px;
+}
+
+
+
+/* ---------------------------underline link css----------------------- */
+.underline-link {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    font-family: "Roboto", serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.underline-link::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.3s ease-in-out;
+}
+
+.underline-link:hover::after,
+.underline-link:focus::after {
+    width: 100%;
+}
+
+.underline-link.active::after {
+    width: 100%;
+}
+
+
+.dropdown-item:hover {
+    background-color: #ffa500;
+    color: white;
+    width: auto;
+}
+
+.dropdown-item.active,
+.dropdown-item:focus {
+    background-color: #000000;
+    color: white;
+}
+
+.dropdown-menu {
+    max-width: 400px;
+    z-index: 1050;
+}
+
+@media only screen and (max-width: 576px) {
+
+    .top-header {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+    .top-header {
+        display: none;
+    }
+}
