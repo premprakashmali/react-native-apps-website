@@ -118,11 +118,11 @@ function About_us() {
             </div>
 
 
-            <div style={{backgroundColor:"black"}}>
+            <div style={{ backgroundColor: "black" }}>
                 <section className="about-us-section py-5" data-aos="fade-up"
                     data-aos-offset="50"
-                    data-aos-delay="50"
-                    data-aos-duration="1000"
+                    data-aos-delay="0"
+                    data-aos-duration="500"
                     data-aos-easing="ease-in-out"
                     data-aos-mirror="true"
                     data-aos-once="false"
@@ -144,11 +144,11 @@ function About_us() {
                         </div>
                     </div>
                 </section>
-                
+
                 <section className="employee-slider py-5" data-aos="fade-up"
                     data-aos-offset="50"
-                    data-aos-delay="50"
-                    data-aos-duration="1000"
+                    data-aos-delay="0"
+                    data-aos-duration="500"
                     data-aos-easing="ease-in-out"
                     data-aos-mirror="true"
                     data-aos-once="false"

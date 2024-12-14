@@ -27,14 +27,14 @@ function Header() {
                         </div>
                         <div className="d-flex align-items-center me-2">
                             <img src={IN_Flag} alt="India Flag" height="22px" width="22px" className="me-2 mt-1" />
-                            <h2 className="mb-0 fs-6">+91-6947258454</h2>
+                            <h2 className="mb-0 fs-6">+91-9680294478</h2>
                             <div style={{ color: 'white', marginLeft: "10px" }}>
                                 |
                             </div>
                         </div>
                         <div className="d-flex align-items-center">
                             <img src={Mail} alt="India Flag" height="22px" width="20px" className="me-2 mt-1" />
-                            <h2 className="mb-0 fs-6">info@gamil.com</h2>
+                            <h2 className="mb-0 fs-6">Accel@gamil.com</h2>
                         </div>
                     </div>
                 </div>

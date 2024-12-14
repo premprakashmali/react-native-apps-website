@@ -176,8 +176,8 @@ function Contact_us() {
                     <br />
                     <div className="container  contact-us-1 mt-1" data-aos="fade-up"
                         data-aos-offset="50"
-                        data-aos-delay="50"
-                        data-aos-duration="1000"
+                        data-aos-delay="0"
+                        data-aos-duration="500"
                         data-aos-easing="ease-in-out"
                         data-aos-mirror="true"
                         data-aos-once="false"

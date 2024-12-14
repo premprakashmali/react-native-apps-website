@@ -138,9 +138,9 @@ function Home() {
                 <h1>Software Development Services</h1>
             </div>
             <div className="card-container me-5" data-aos="fade-up"
-                data-aos-offset="10"
-                data-aos-delay="50"
-                data-aos-duration="1000"
+                data-aos-offset="50"
+                data-aos-delay="0"
+                data-aos-duration="500"
                 data-aos-easing="ease-in-out"
                 data-aos-mirror="true"
                 data-aos-once="false"
@@ -227,8 +227,8 @@ function Home() {
 
             <section className="coursel-slider py-5 " style={{ backgroundColor: "#fff5ee" }} data-aos="fade-up"
                 data-aos-offset="50"
-                data-aos-delay="50"
-                data-aos-duration="1000"
+                data-aos-delay="0"
+                data-aos-duration="500"
                 data-aos-easing="ease-in-out"
                 data-aos-mirror="true"
                 data-aos-once="false"
@@ -332,9 +332,9 @@ function Home() {
 
 
             <div className="card-section-bg" data-aos="fade-up"
-                data-aos-offset="50"
-                data-aos-delay="50"
-                data-aos-duration="1000"
+               data-aos-offset="50"
+               data-aos-delay="0"
+               data-aos-duration="500"
                 data-aos-easing="ease-in-out"
                 data-aos-mirror="true"
                 data-aos-once="false"
@@ -425,8 +425,8 @@ function Home() {
                 <br />
                 <div className="container my-5 contact-us mt-5" data-aos="fade-up"
                     data-aos-offset="50"
-                    data-aos-delay="50"
-                    data-aos-duration="1000"
+                    data-aos-delay="0"
+                    data-aos-duration="500"
                     data-aos-easing="ease-in-out"
                     data-aos-mirror="true"
                     data-aos-once="false"
@@ -478,8 +478,8 @@ function Home() {
             {/* ----------------------------Blog----------------------- */}
             <div className="blog-section mt-5" data-aos="fade-up"
                     data-aos-offset="50"
-                    data-aos-delay="50"
-                    data-aos-duration="1000"
+                    data-aos-delay="0"
+                    data-aos-duration="500"
                     data-aos-easing="ease-in-out"
                     data-aos-mirror="true"
                     data-aos-once="false"
