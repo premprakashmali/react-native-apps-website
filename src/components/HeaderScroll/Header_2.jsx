@@ -11,7 +11,7 @@ function Header_2() {
     };
     return (
         <div>
-            <div className='conatiner-fluid main-header'>
+            <div className='conatiner-fluid'>
                 <nav className="navbar navbar-expand-sm scond-header">
                     <div className="container-fluid d-flex justify-content-between">
                         <Link to={'/'}><img src={Logo} alt="" height={'90px'} /></Link>
