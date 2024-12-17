@@ -1,15 +1,11 @@
-* {
-    margin: 0;
-    padding: 0;
-}
 .main-header {
-    position: relative; 
+    position: relative;
     z-index: 10;
     color: white;
-    width: 100%; 
-    top: 0; 
+    width: 100%;
+    top: 0;
+    background-color: #2F855A;
 }
-
 
 .top-header {
     text-align: right;
@@ -26,8 +22,9 @@
 }
 
 .navbar {
-    margin: 10px;
-    background-color: rgba(52, 50, 50, 0.379);
+    background-color:#F7FAFC;
+    position: relative;
+    z-index: 10;
 }
 
 .navbar li a {
@@ -84,6 +81,7 @@
 
 
 
+
 /* ---------------------------underline link css----------------------- */
 .underline-link {
     position: relative;
@@ -100,8 +98,8 @@
     bottom: -2px;
     left: 0;
     width: 0;
-    height: 2px;
-    background-color: #fff;
+    height: 3px;
+    background-color: #000000;
     transition: width 0.3s ease-in-out;
 }
 

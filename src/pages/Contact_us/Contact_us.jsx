@@ -85,7 +85,7 @@ function Contact_us() {
 
     return (
         <div>
-            <div className='image-container-1'>
+            <div className='contact-container-1'>
                 <Header />
 
                 {/* Second Header */}
@@ -99,43 +99,48 @@ function Contact_us() {
                 </div>
             </div>
 
-            <div className='opacity-image-1'></div>
+            <div className='opacity-image-contact'></div>
 
 
             {/* -------------------------------Modal-Inquiry-form------------------------ */}
 
-            <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div className="modal fade" id="exampleModal" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div className="modal-dialog modal-dialog-centered modal-xl">
                     <div className="modal-content">
-                        <div className="modal-body p-4 d-flex">
-                            <button type="button" className="btn-close rounded-2 p-2" data-bs-dismiss="modal" aria-label="Close" style={{ position: 'absolute', top: '15px', right: '15px', backgroundColor: "#17c4a7" }}></button>
-                            <div className="modal-back-img">
-                            </div>
-                            <div className="query-form">
-                                <h4 className="mb-4">Please Enter Your Inquiry</h4>
-                                <form className="row g-3">
-                                    <div className="col-12">
-                                        <input type="text" className="form-control " placeholder="First Name" />
-                                    </div>
-                                    <div className="col-12">
-                                        <input type="text" className="form-control " placeholder="Last Name" />
-                                    </div>
-                                    <div className="col-12">
-                                        <input type="email" className="form-control " placeholder="Email Address" />
-                                    </div>
-                                    <div className="col-12">
-                                        <input type="text" className="form-control " placeholder="Mobile Number" />
-                                    </div>
-                                    <div className="col-12">
-                                        <textarea className="form-control " rows="4" placeholder="Your Message"></textarea>
-                                    </div>
+                        <div className="modal-body p-4">
+                            <button type="button" className="btn-close rounded-2 p-2" data-bs-dismiss="modal" aria-label="Close" style={{ position: "absolute", top: "15px", right: "15px", backgroundColor: "#fff", }}></button>
+                            <div className="row g-4">
+                                <div className="col-lg-6 col-md-12 d-flex">
+                                    <div className="modal-back-img"></div>
+                                </div>
+                                <div className="col-lg-6 col-md-8">
+                                    <div className="query-form">
+                                        <h4 className="mb-4">Please Enter Your Inquiry</h4>
+                                        <form className="row g-3">
+                                            <div className="col-md-6">
+                                                <input type="text" className="form-control" placeholder="First Name" />
+                                            </div>
+                                            <div className="col-md-6">
+                                                <input type="text" className="form-control" placeholder="Last Name" />
+                                            </div>
+                                            <div className="col-12">
+                                                <input type="email" className="form-control" placeholder="Email Address" />
+                                            </div>
+                                            <div className="col-12">
+                                                <input type="text" className="form-control" placeholder="Mobile Number" />
+                                            </div>
+                                            <div className="col-12">
+                                                <textarea className="form-control" rows="4" placeholder="Your Message"></textarea>
+                                            </div>
 
-                                    <div className="d-flex justify-content-end">
-                                        <button style={{ backgroundColor: "#17c4a7", border: "none", fontWeight: 800 }} type="submit" className="btn btn-primary text-dark rounded-5 p-2">
-                                            Send Inquiry
-                                        </button>
+                                            <div className="col-12 d-flex justify-content-end">
+                                                <button style={{ backgroundColor: "#000", border: "none", fontWeight: 800, }} type="submit" className="btn btn-primary text-light rounded-5 px-4 py-2" >
+                                                    Send Inquiry
+                                                </button>
+                                            </div>
+                                        </form>
                                     </div>
-                                </form>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -174,29 +179,22 @@ function Contact_us() {
             <div className="contact-bg">
                 <div className="container-fluid p-0" >
                     <br />
-                    <div className="container  contact-us-1 mt-1" data-aos="fade-up"
-                        data-aos-offset="50"
-                        data-aos-delay="0"
-                        data-aos-duration="500"
-                        data-aos-easing="ease-in-out"
-                        data-aos-mirror="true"
-                        data-aos-once="false"
-                        data-aos-anchor-placement="top-center">
+                    <div className="container  contact-us-1 mt-1">
                         <div className="row justify-content-center align-items-center form-bg mx-0">
                             <div className="col-lg-5 col-md-6">
                                 <form>
                                     <div className="col-12 mb-3">
                                         <label htmlFor="name" className="form-label form-col">NAME</label>
-                                        <input type="text" className="w-100 p-2 rounded-5 input-border" id="name" placeholder=" Name" required />
+                                        <input type="text" className="w-100 p-2 rounded-2 input-border" id="name" placeholder=" Name" required />
                                     </div>
                                     <div className="row mb-3">
-                                        <div className="col-6 mb-3">
+                                        <div className="col-12 mb-3">
                                             <label htmlFor="email" className="form-label form-col">EMAIL</label>
-                                            <input type="email" className="w-100 p-2 rounded-5 input-border" id="email" placeholder=" Email" required />
+                                            <input type="email" className="w-100 p-2 rounded-2 input-border" id="email" placeholder=" Email" required />
                                         </div>
-                                        <div className="col-6 mb-3">
+                                        <div className="col-12 mb-3">
                                             <label htmlFor="phone" className="form-label form-col">MOBILE NUMBER</label>
-                                            <input type="tel" className="w-100 p-2 rounded-5 input-border" id="phone" placeholder=" Mobile number" />
+                                            <input type="tel" className="w-100 p-2 rounded-2 input-border" id="phone" placeholder=" Mobile number" />
                                         </div>
                                         <div className="col-6 mb-3">
                                             <label htmlFor="" className="form-label form-col">COUNTRY CODE</label>
@@ -208,7 +206,7 @@ function Contact_us() {
                                         <div className="col-6 mb-3">
                                             <label htmlFor="phone" className="form-label form-col">SELECT SERVICES</label>
                                             {/* <input type="tel" className="w-100 p-2 rounded-5 input-border" id="phone" placeholder=" Mobile number"/> */}
-                                            <select name="" id="" className='input-border w-100 p-2 rounded-5 '>
+                                            <select name="" id="" className='input-border w-100 p-2 rounded-2 '>
                                                 <option value="">Mobile Application</option>
                                                 <option value=""></option>
                                                 <option value=""></option>

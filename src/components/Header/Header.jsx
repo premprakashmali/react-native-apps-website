@@ -3,6 +3,7 @@ import '../Header/Header.css'
 import uk_Flag from '../../assets/Icons/united-kingdom.png'
 import IN_Flag from '../../assets/Icons/flag.png'
 import Logo from '../../assets/Logo/Accel.png'
+import blackLogo from '../../assets/Logo/company1.png'
 import Mail from '../../assets/Icons/mail.png'
 import { Link, NavLink } from 'react-router-dom'
 
@@ -27,21 +28,22 @@ function Header() {
                         </div>
                         <div className="d-flex align-items-center me-2">
                             <img src={IN_Flag} alt="India Flag" height="22px" width="22px" className="me-2 mt-1" />
-                            <h2 className="mb-0 fs-6">+91-9680294478</h2>
+                            <h2 className="mb-0 fs-6">+91-6947258454</h2>
                             <div style={{ color: 'white', marginLeft: "10px" }}>
                                 |
                             </div>
                         </div>
                         <div className="d-flex align-items-center">
                             <img src={Mail} alt="India Flag" height="22px" width="20px" className="me-2 mt-1" />
-                            <h2 className="mb-0 fs-6">Accel@gamil.com</h2>
+                            <h2 className="mb-0 fs-6">info@gamil.com</h2>
                         </div>
                     </div>
+                </div>
                 </div>
 
                 <nav className="navbar navbar-expand-sm navbar-light">
                     <div className="container-fluid d-flex justify-content-between">
-                        <NavLink to={'/'}><img src={Logo} alt="" height={'90px'} /></NavLink>
+                        <NavLink to={'/'}><img src={blackLogo} alt="" height={'80px'} /></NavLink>
                         <button className="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
                             <span className="navbar-toggler-icon"></span>
                         </button>
@@ -50,18 +52,18 @@ function Header() {
                             <div className="d-flex align-items-center">
                                 <ul className="navbar-nav me-auto">
                                     <li className="nav-item dropdown">
-                                        <Link to="/" className={`nav-link text-light underline-link ${activeLink === "/" ? "active" : ""}`} aria-expanded="false" onClick={() => handleSetActive("/")}>
+                                        <Link to="/" className={`nav-link text-dark underline-link ${activeLink === "/" ? "active" : ""}`} aria-expanded="false" onClick={() => handleSetActive("/")}>
                                             SERVICES
-                                            <i className="fa-solid fa-caret-down ms-2" style={{ color: "#fff" }}></i>
+                                            <i className="fa-solid fa-caret-down ms-2" style={{ color: "#000" }}></i>
                                         </Link>
                                         <ul className="dropdown-menu">
                                             <li>
-                                                <Link to="/hire" className="dropdown-item">
+                                                <Link to="/hire" className="dropdown-item text-dark">
                                                     Hire React Native Developer
                                                 </Link>
                                             </li>
                                             <li>
-                                                <Link className="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                <Link className="dropdown-item text-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                                     Custom Mobile App Development
                                                 </Link>
                                             </li>
@@ -69,32 +71,31 @@ function Header() {
                                     </li>
 
                                     <li className="nav-item">
-                                        <NavLink to="/career" className={`nav-link text-light underline-link ${activeLink === "career" ? "active" : ""}`}
+                                        <NavLink to="/career" className={`nav-link text-dark underline-link ${activeLink === "career" ? "active" : ""}`}
                                             onClick={() => handleSetActive("career")}>CAREER
                                         </NavLink>
                                     </li>
                                     <li className="nav-item">
-                                        <NavLink to="/about" className={`nav-link text-light underline-link ${activeLink === "about" ? "active" : ""}`}
+                                        <NavLink to="/about" className={`nav-link text-dark underline-link ${activeLink === "about" ? "active" : ""}`}
                                             onClick={() => handleSetActive("about")}>
                                             ABOUT US
                                         </NavLink>
                                     </li>
                                     <li className="nav-item">
-                                        <NavLink to="/contact_us" className={`nav-link text-light underline-link ${activeLink === "contact_us" ? "active" : ""}`}
+                                        <NavLink to="/contact_us" className={`nav-link text-dark underline-link ${activeLink === "contact_us" ? "active" : ""}`}
                                             onClick={() => handleSetActive("contact_us")}>
                                             CONTACT US
                                         </NavLink>
                                     </li>
                                 </ul>
                             </div>
-                            <button type="button" style={{ backgroundColor: "#ffa500", border: "none", fontWeight: 800, color: "white" }} className="btn btn-warning p-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <button type="button" style={{ backgroundColor: "black", border: "1px solid #FFFFFF", fontWeight: 800, color: "#FFFFFF" }} className="btn btn-warning p-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 Request a Quote
                             </button>
                         </div>
 
                     </div>
                 </nav>
-            </div>
         </div>
 
 

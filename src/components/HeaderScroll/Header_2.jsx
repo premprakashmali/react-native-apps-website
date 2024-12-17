@@ -23,13 +23,21 @@ function Header_2() {
                             <div className="d-flex align-items-center">
                                 <ul className="navbar-nav me-auto">
                                     <li className="nav-item dropdown">
-                                        <Link to="/" className={`nav-link text-dark underline-link-1 active ${activeLink === "/" ? "active" : ""}`}
-                                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" onClick={() => handleSetActive("/")}>
-                                            SERVICES  <i class="fa-solid fa-caret-down ms-2" style={{ color: "#000" }}></i>
+                                        <Link to="/" className={`nav-link text-dark underline-link-1 ${activeLink === "/" ? "active" : ""}`} aria-expanded="false" onClick={() => handleSetActive("/")}>
+                                            SERVICES
+                                            <i className="fa-solid fa-caret-down ms-2" style={{ color: "#000" }}></i>
                                         </Link>
-                                        <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                            <li><Link to={'/hire'} className="dropdown-item" href="#">Hire React Native Developer</Link></li>
-                                            <li><Link className="dropdown-item" data-bs-toggle="modal" href="#" data-bs-target="#exampleModal">Custom Mobile App Development</Link></li>
+                                        <ul className="dropdown-menu">
+                                            <li>
+                                                <Link to="/hire" className="dropdown-item">
+                                                    Hire React Native Developer
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link className="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                    Custom Mobile App Development
+                                                </Link>
+                                            </li>
                                         </ul>
                                     </li>
                                     <li className="nav-item">
@@ -51,7 +59,7 @@ function Header_2() {
                                     </li>
                                 </ul>
                             </div>
-                            <button type="button" style={{ backgroundColor: "#ec1111", border: "none", fontWeight: 'bold', color: "white" }} className="btn btn-warning p-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <button type="button" style={{ backgroundColor: "black", border: "none", fontWeight: 'bold', color: "white" }} className="btn btn-warning p-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 Request a Quote
                             </button>
                         </div>

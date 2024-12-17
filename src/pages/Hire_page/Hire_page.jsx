@@ -44,38 +44,43 @@ function Hire_page() {
 
             {/* -------------------------------Modal-Inquiry-form------------------------ */}
 
-            <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div className="modal fade" id="exampleModal" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div className="modal-dialog modal-dialog-centered modal-xl">
                     <div className="modal-content">
-                        <div className="modal-body p-4 d-flex">
-                            <button type="button" className="btn-close rounded-2 p-2" data-bs-dismiss="modal" aria-label="Close" style={{ position: 'absolute', top: '15px', right: '15px', backgroundColor: "#17c4a7" }}></button>
-                            <div className="modal-back-img">
-                            </div>
-                            <div className="query-form">
-                                <h4 className="mb-4">Please Enter Your Inquiry</h4>
-                                <form className="row g-3">
-                                    <div className="col-12">
-                                        <input type="text" className="form-control " placeholder="First Name" />
-                                    </div>
-                                    <div className="col-12">
-                                        <input type="text" className="form-control " placeholder="Last Name" />
-                                    </div>
-                                    <div className="col-12">
-                                        <input type="email" className="form-control " placeholder="Email Address" />
-                                    </div>
-                                    <div className="col-12">
-                                        <input type="text" className="form-control " placeholder="Mobile Number" />
-                                    </div>
-                                    <div className="col-12">
-                                        <textarea className="form-control " rows="4" placeholder="Your Message"></textarea>
-                                    </div>
+                        <div className="modal-body p-4">
+                            <button type="button" className="btn-close rounded-2 p-2" data-bs-dismiss="modal" aria-label="Close" style={{ position: "absolute", top: "15px", right: "15px", backgroundColor: "#fff", }}></button>
+                            <div className="row g-4">
+                                <div className="col-lg-6 col-md-12 d-flex ">
+                                    <div className="modal-back-img"></div>
+                                </div>
+                                <div className="col-lg-6 col-md-8">
+                                    <div className="query-form">
+                                        <h4 className="mb-4">Please Enter Your Inquiry</h4>
+                                        <form className="row g-3">
+                                            <div className="col-md-6">
+                                                <input type="text" className="form-control" placeholder="First Name" />
+                                            </div>
+                                            <div className="col-md-6">
+                                                <input type="text" className="form-control" placeholder="Last Name" />
+                                            </div>
+                                            <div className="col-12">
+                                                <input type="email" className="form-control" placeholder="Email Address" />
+                                            </div>
+                                            <div className="col-12">
+                                                <input type="text" className="form-control" placeholder="Mobile Number" />
+                                            </div>
+                                            <div className="col-12">
+                                                <textarea className="form-control" rows="4" placeholder="Your Message"></textarea>
+                                            </div>
 
-                                    <div className="d-flex justify-content-end">
-                                        <button style={{ backgroundColor: "#17c4a7", border: "none", fontWeight: 800 }} type="submit" className="btn btn-primary text-dark rounded-5 p-2">
-                                            Send Inquiry
-                                        </button>
+                                            <div className="col-12 d-flex justify-content-end">
+                                                <button style={{ backgroundColor: "black", border: "none", fontWeight: 800, }} type="submit" className="btn btn-primary text-light rounded-5 px-4 py-2" >
+                                                    Send Inquiry
+                                                </button>
+                                            </div>
+                                        </form>
                                     </div>
-                                </form>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -83,25 +88,25 @@ function Hire_page() {
             </div>
             {/* -------------------------------Modal-Inquiry-form------------------------ */}
 
-            <div className="form-section p-4" style={{ backgroundColor: "black" }}>
-                <div className="form-container mx-auto p-4 rounded shadow" style={{ backgroundColor: "white", maxWidth: "600px" }}>
+            <div className="form-section form-background p-4">
+                <div className="form-container mx-auto p-4 rounded shadow">
                     <h2 className="form-title text-center mb-4">Hire a React Native Developer!</h2>
                     <form>
                         <div className="mb-3">
-                            <label htmlFor="fullName" className="form-label text-dark">Full Name</label>
-                            <input type="text" id="fullName" className="form-input w-100 p-2 rounded-3" placeholder="Enter your full name" required />
+                            <label htmlFor="fullName" className="form-label text-light">Full Name</label>
+                            <input type="text" id="fullName" className="form-input w-100 p-2 rounded-2" placeholder="Enter your full name" required />
                         </div>
                         <div className="mb-3">
-                            <label htmlFor="email" className="form-label text-dark">Email Address</label>
-                            <input type="email" id="email" className="form-input w-100 p-2 rounded-3" placeholder="Enter your email" required />
+                            <label htmlFor="email" className="form-label text-light">Email Address</label>
+                            <input type="email" id="email" className="form-input w-100 p-2 rounded-2" placeholder="Enter your email" required />
                         </div>
                         <div className="mb-3">
-                            <label htmlFor="phone" className="form-label text-dark">Mobile Number</label>
-                            <input type="tel" id="phone" className="form-input w-100 p-2 rounded-3" placeholder="Enter your mobile number" required />
+                            <label htmlFor="phone" className="form-label text-light">Mobile Number</label>
+                            <input type="tel" id="phone" className="form-input w-100 p-2 rounded-2" placeholder="Enter your mobile number" required />
                         </div>
                         <div className="mb-3">
-                            <label htmlFor="projectDetails" className="form-label text-dark">Description</label>
-                            <textarea id="projectDetails" rows="4" className="form-input w-100 p-2 rounded-3" placeholder="Please provide some of your terms" required></textarea>
+                            <label htmlFor="projectDetails" className="form-label text-light">Description</label>
+                            <textarea id="projectDetails" rows="4" className="form-input w-100 p-2 rounded-2" placeholder="Please provide some of your terms" required></textarea>
                         </div>
                         <div className="text-start">
                             <button type="submit" className="p-2 btn-custom  rounded">
@@ -111,6 +116,7 @@ function Hire_page() {
                     </form>
                 </div>
             </div>
+            <div className='opacityimage'></div>
             <Footer />
         </div>
     )

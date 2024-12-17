@@ -54,7 +54,7 @@ function Home() {
     useEffect(() => {
         AOS.init({ once: true });
     }, []);
-    
+
 
     return (
         <div>
@@ -68,44 +68,50 @@ function Home() {
 
 
                 {/* -------------------------------Modal-Inquiry-form------------------------ */}
-
-                <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div className="modal fade" id="exampleModal" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div className="modal-dialog modal-dialog-centered modal-xl">
                         <div className="modal-content">
-                            <div className="modal-body p-4 d-flex">
-                                <button type="button" className="btn-close rounded-2 p-2" data-bs-dismiss="modal" aria-label="Close" style={{ position: 'absolute', top: '15px', right: '15px', backgroundColor: "#17c4a7" }}></button>
-                                <div className="modal-back-img">
-                                </div>
-                                <div className="query-form">
-                                    <h4 className="mb-4">Please Enter Your Inquiry</h4>
-                                    <form className="row g-3">
-                                        <div className="col-12">
-                                            <input type="text" className="form-control " placeholder="First Name" />
-                                        </div>
-                                        <div className="col-12">
-                                            <input type="text" className="form-control " placeholder="Last Name" />
-                                        </div>
-                                        <div className="col-12">
-                                            <input type="email" className="form-control " placeholder="Email Address" />
-                                        </div>
-                                        <div className="col-12">
-                                            <input type="text" className="form-control " placeholder="Mobile Number" />
-                                        </div>
-                                        <div className="col-12">
-                                            <textarea className="form-control " rows="4" placeholder="Your Message"></textarea>
-                                        </div>
+                            <div className="modal-body p-4">
+                                <button type="button" className="btn-close rounded-2 p-2" data-bs-dismiss="modal" aria-label="Close" style={{ position: "absolute", top: "15px", right: "15px", backgroundColor: "#fff", }}></button>
+                                <div className="row g-4">
+                                    <div className="col-lg-6 col-md-12 d-flex ">
+                                        <div className="modal-back-img"></div>
+                                    </div>
+                                    <div className="col-lg-6 col-md-8">
+                                        <div className="query-form">
+                                            <h4 className="mb-4">Please Enter Your Inquiry</h4>
+                                            <form className="row g-3">
+                                                <div className="col-md-6">
+                                                    <input type="text" className="form-control" placeholder="First Name" />
+                                                </div>
+                                                <div className="col-md-6">
+                                                    <input type="text" className="form-control" placeholder="Last Name" />
+                                                </div>
+                                                <div className="col-12">
+                                                    <input type="email" className="form-control" placeholder="Email Address" />
+                                                </div>
+                                                <div className="col-12">
+                                                    <input type="text" className="form-control" placeholder="Mobile Number" />
+                                                </div>
+                                                <div className="col-12">
+                                                    <textarea className="form-control" rows="4" placeholder="Your Message"></textarea>
+                                                </div>
 
-                                        <div className="d-flex justify-content-end">
-                                            <button style={{ backgroundColor: "#17c4a7", border: "none", fontWeight: 800 }} type="submit" className="btn btn-primary text-dark rounded-5 p-2">
-                                                Send Inquiry
-                                            </button>
+                                                <div className="col-12 d-flex justify-content-end">
+                                                    <button style={{ backgroundColor: "black", border: "none", fontWeight: 800, }} type="submit" className="btn btn-primary text-light rounded-5 px-4 py-2" >
+                                                        Send Inquiry
+                                                    </button>
+                                                </div>
+                                            </form>
                                         </div>
-                                    </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+
                 {/* -------------------------------Modal-Inquiry-form------------------------ */}
 
 
@@ -137,14 +143,7 @@ function Home() {
             <div className='heading-services mt-5 '>
                 <h1>Software Development Services</h1>
             </div>
-            <div className="card-container me-5" data-aos="fade-up"
-                data-aos-offset="50"
-                data-aos-delay="0"
-                data-aos-duration="500"
-                data-aos-easing="ease-in-out"
-                data-aos-mirror="true"
-                data-aos-once="false"
-                data-aos-anchor-placement="top-center" >
+            <div className="card-container services me-5" >
                 <div className="card ">
                     <div className="card-inner ">
                         <div className="card-front d-flex justify-content-center">
@@ -225,18 +224,11 @@ function Home() {
 
 
 
-            <section className="coursel-slider py-5 " style={{ backgroundColor: "#fff5ee" }} data-aos="fade-up"
-                data-aos-offset="50"
-                data-aos-delay="0"
-                data-aos-duration="500"
-                data-aos-easing="ease-in-out"
-                data-aos-mirror="true"
-                data-aos-once="false"
-                data-aos-anchor-placement="top-center">
+            <section className="coursel-slider py-5 " style={{ backgroundColor: "#fff5ee" }}>
                 <div className="container">
                     <h1 className="text-center mb-4 feature-tittle">Our Expertise</h1>
                     <div id="ExpertiseCarousel" className="carousel slide" data-bs-ride="carousel">
-                        <button className="carousel-control-prev " type="button" data-bs-target="#ExpertiseCarousel" data-bs-slide="prev">
+                        <button className="carousel-control-prev" type="button" data-bs-target="#ExpertiseCarousel" data-bs-slide="prev">
                             <span className="carousel-control-prev-icon" aria-hidden="true" />
                             <span className="visually-hidden">Previous</span>
                         </button>
@@ -244,7 +236,7 @@ function Home() {
                             <span className="carousel-control-next-icon" aria-hidden="true" />
                             <span className="visually-hidden">Next</span>
                         </button>
-                        <div className="carousel-inner ms-5">
+                        <div className="carousel-inner">
                             <div className="carousel-item active">
                                 <div className="row">
                                     <div className="col-md-4">
@@ -331,16 +323,9 @@ function Home() {
             {/* ----------------------------Industries We Have Serves-------------------------- */}
 
 
-            <div className="card-section-bg" data-aos="fade-up"
-               data-aos-offset="50"
-               data-aos-delay="0"
-               data-aos-duration="500"
-                data-aos-easing="ease-in-out"
-                data-aos-mirror="true"
-                data-aos-once="false"
-                data-aos-anchor-placement="top-center">
+            <div className="card-section-bg">
                 <section className="container py-5 mt-5">
-                    <h2 className="text-center text-primary mb-4 conte-tittle-1">Industries We Have Served</h2>
+                    <h2 className="text-center text-primary mb-4 conte-tittle-1">Industries We Have Serves</h2>
                     <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-4 g-4 justify-content-center mt-5">
                         <div className="col d-flex justify-content-center">
                             <div className="card1 text-center rounded-0" style={{ width: '12rem' }}>
@@ -417,20 +402,10 @@ function Home() {
 
 
 
-
-
-
             {/* --------------------Contact-us-form --------------------- */}
             <div className='container-fluid img-fixed-back'>
                 <br />
-                <div className="container my-5 contact-us mt-5" data-aos="fade-up"
-                    data-aos-offset="50"
-                    data-aos-delay="0"
-                    data-aos-duration="500"
-                    data-aos-easing="ease-in-out"
-                    data-aos-mirror="true"
-                    data-aos-once="false"
-                    data-aos-anchor-placement="top-center">
+                <div className="container my-5 contact-us mt-5" >
                     <div className="row justify-content-center align-items-center">
                         <h2 className="text-center contact-heading mb-4">Contact Us</h2>
 
@@ -476,14 +451,7 @@ function Home() {
 
 
             {/* ----------------------------Blog----------------------- */}
-            <div className="blog-section mt-5" data-aos="fade-up"
-                    data-aos-offset="50"
-                    data-aos-delay="0"
-                    data-aos-duration="500"
-                    data-aos-easing="ease-in-out"
-                    data-aos-mirror="true"
-                    data-aos-once="false"
-                    data-aos-anchor-placement="top-center">
+            <div className="blog-section mt-5">
                 <div className='blog-tittle mt-5'>
                     <h1 style={{ color: "#007bff" }}>Blog</h1>
                 </div>

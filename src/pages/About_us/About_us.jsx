@@ -25,7 +25,7 @@ function About_us() {
 
     return (
         <div>
-            <div className='image-container-1'>
+            <div className='about-container-1'>
                 <Header />
 
                 {/* Second Header */}
@@ -41,42 +41,47 @@ function About_us() {
 
             </div>
 
-            <div className='opacity-image-1'></div>
+            <div className='opacity-image-about'></div>
 
             {/* -------------------------------Modal-Inquiry-form------------------------ */}
 
-            <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div className="modal fade" id="exampleModal" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div className="modal-dialog modal-dialog-centered modal-xl">
                     <div className="modal-content">
-                        <div className="modal-body p-4 d-flex">
-                            <button type="button" className="btn-close rounded-2 p-2" data-bs-dismiss="modal" aria-label="Close" style={{ position: 'absolute', top: '15px', right: '15px', backgroundColor: "#17c4a7" }}></button>
-                            <div className="modal-back-img">
-                            </div>
-                            <div className="query-form">
-                                <h4 className="mb-4">Please Enter Your Inquiry</h4>
-                                <form className="row g-3">
-                                    <div className="col-12">
-                                        <input type="text" className="form-control " placeholder="First Name" />
-                                    </div>
-                                    <div className="col-12">
-                                        <input type="text" className="form-control " placeholder="Last Name" />
-                                    </div>
-                                    <div className="col-12">
-                                        <input type="email" className="form-control " placeholder="Email Address" />
-                                    </div>
-                                    <div className="col-12">
-                                        <input type="text" className="form-control " placeholder="Mobile Number" />
-                                    </div>
-                                    <div className="col-12">
-                                        <textarea className="form-control " rows="4" placeholder="Your Message"></textarea>
-                                    </div>
+                        <div className="modal-body p-4">
+                            <button type="button" className="btn-close rounded-2 p-2" data-bs-dismiss="modal" aria-label="Close" style={{ position: "absolute", top: "15px", right: "15px", backgroundColor: "#fff", }}></button>
+                            <div className="row g-4">
+                                <div className="col-lg-6 col-md-12 d-flex ">
+                                    <div className="modal-back-img"></div>
+                                </div>
+                                <div className="col-lg-6 col-md-8">
+                                    <div className="query-form">
+                                        <h4 className="mb-4">Please Enter Your Inquiry</h4>
+                                        <form className="row g-3">
+                                            <div className="col-md-6">
+                                                <input type="text" className="form-control" placeholder="First Name" />
+                                            </div>
+                                            <div className="col-md-6">
+                                                <input type="text" className="form-control" placeholder="Last Name" />
+                                            </div>
+                                            <div className="col-12">
+                                                <input type="email" className="form-control" placeholder="Email Address" />
+                                            </div>
+                                            <div className="col-12">
+                                                <input type="text" className="form-control" placeholder="Mobile Number" />
+                                            </div>
+                                            <div className="col-12">
+                                                <textarea className="form-control" rows="4" placeholder="Your Message"></textarea>
+                                            </div>
 
-                                    <div className="d-flex justify-content-end">
-                                        <button style={{ backgroundColor: "#17c4a7", border: "none", fontWeight: 800 }} type="submit" className="btn btn-primary text-dark rounded-5 p-2">
-                                            Send Inquiry
-                                        </button>
+                                            <div className="col-12 d-flex justify-content-end">
+                                                <button style={{ backgroundColor: "#000", border: "none", fontWeight: 800, }} type="submit" className="btn btn-primary text-light rounded-5 px-4 py-2" >
+                                                    Send Inquiry
+                                                </button>
+                                            </div>
+                                        </form>
                                     </div>
-                                </form>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -119,14 +124,7 @@ function About_us() {
 
 
             <div style={{ backgroundColor: "black" }}>
-                <section className="about-us-section py-5" data-aos="fade-up"
-                    data-aos-offset="50"
-                    data-aos-delay="0"
-                    data-aos-duration="500"
-                    data-aos-easing="ease-in-out"
-                    data-aos-mirror="true"
-                    data-aos-once="false"
-                    data-aos-anchor-placement="top-center">
+                <section className="about-us-section py-5">
                     <div className="container">
                         <div className="row align-items-center">
                             <div className="col-lg-6 order-lg-1 order-2">
@@ -145,14 +143,7 @@ function About_us() {
                     </div>
                 </section>
 
-                <section className="employee-slider py-5" data-aos="fade-up"
-                    data-aos-offset="50"
-                    data-aos-delay="0"
-                    data-aos-duration="500"
-                    data-aos-easing="ease-in-out"
-                    data-aos-mirror="true"
-                    data-aos-once="false"
-                    data-aos-anchor-placement="top-center">
+                <section className="employee-slider py-5 mt-5">
                     <div className="container">
                         <h2 className="text-center fw-bold mb-4 text-light">Our Team</h2>
                         <div id="employeeCarousel" className="carousel slide" data-bs-ride="carousel">
