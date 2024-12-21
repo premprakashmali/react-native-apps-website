@@ -2,7 +2,7 @@
   max-width: 75%;
 }
 .modal-back-img {
-  background-image: url('../../assets/Image//employee.jpg');
+  background-image: url('https://images.unsplash.com/photo-1651684195895-38708dc94cfa?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -27,6 +27,8 @@
   background-size: cover;
   justify-content: center;
   position: relative;
+  margin-top: -8px;
+
 }
 .opacity-image-contact {
   position: absolute;
@@ -44,23 +46,22 @@
 }
 
 .contact-heading-1 {
-    font-weight: 700;
-    font-size:35px;
-    color: #007bff;
-    position: relative;
-    z-index: 2;
+  font-weight: 700;
+  color: #007bff;
+  position: relative;
+  z-index: 2;
+  top: 200px;
 }
 
 .contact-heading-1::after {
-    content: "";
-    position: absolute;
-    bottom: -15px;
-    left:4%;
-    transform: translateX(-50%);
-    margin-left: 5px;
-    width: 8%;
-    height: 5px;
-    background-color: rgb(255, 136, 0);
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 48%;
+  transform: translateX(-50%);
+  width: 70%;
+  height: 5px;
+  background-color: rgb(255, 136, 0);
 }
 
 .contact-first-contain {
@@ -238,11 +239,11 @@
       background-size: cover;
       justify-content: center;
       position: relative;
-      top: -10px;
+      top:0px;
   }
   .opacity-image-contact {
       position: absolute;
-      top: 0;
+      top: 10px;
       left: 0;
       height: 50%;
       width: 100%;
@@ -270,11 +271,11 @@
     background-size: cover;
     justify-content: center;
     position: relative;
-    top: -10px;
+    top:0px;
 }
 .opacity-image-contact {
     position: absolute;
-    top: 0;
+    top: 10px;
     left: 0;
     height: 50%;
     width: 100%;

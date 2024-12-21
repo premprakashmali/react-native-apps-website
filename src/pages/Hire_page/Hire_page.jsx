@@ -24,23 +24,19 @@ function Hire_page() {
     }, []);
     return (
         <div>
-            <div className='image-container-1'>
+            <div className='hire-container-1'>
                 <Header />
 
                 {/* Second Header */}
                 <div className={`second-header ${showSecondHeader ? 'visible' : ''}`}>
                     <Header_2 />
-
                 </div>
-
-                <div className="hire-tittle-1 text-light ms-3 mt-5" style={{}}>
-                    <h4 className='hire-tittle-1'>Hire Developer </h4>
-                </div>
-
-
             </div>
 
-            <div className='opacity-image-1'></div>
+            <div className="hire-tittle-1 ms-3 mt-5" style={{ position: 'absolute' }}>
+            <h4 className='text-start' style={{marginLeft:"20px",fontSize:"30px"}}>Hire Developer</h4>
+            </div>
+            <div className='hire-opacity-image-1'></div>
 
             {/* -------------------------------Modal-Inquiry-form------------------------ */}
 
@@ -116,7 +112,7 @@ function Hire_page() {
                     </form>
                 </div>
             </div>
-            <div className='opacityimage'></div>
+            {/* <div className='opacityimage'></div> */}
             <Footer />
         </div>
     )

@@ -91,12 +91,11 @@ function Contact_us() {
                 {/* Second Header */}
                 <div className={`second-header ${showSecondHeader ? 'visible' : ''}`}>
                     <Header_2 />
-
                 </div>
-
-                <div className="contact-heading-1  ms-3 mt-5">
-                    <h2 className="contact-heading-1 mt-5">Contact Us</h2>
-                </div>
+            </div>
+            
+            <div className="contact-heading-1  ms-3 mt-5" style={{ position: 'absolute' }}>
+            <h4 className='text-start' style={{marginLeft:"20px",fontSize:"30px"}}>Contact Us</h4>
             </div>
 
             <div className='opacity-image-contact'></div>

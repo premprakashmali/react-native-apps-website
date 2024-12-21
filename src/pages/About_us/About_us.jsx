@@ -33,14 +33,11 @@ function About_us() {
                     <Header_2 />
 
                 </div>
-
-                <div className="about-tittle  ms-3 mt-5">
-                    <h4 className='about-tittle'>About Us</h4>
-                </div>
-
-
             </div>
 
+            <div className="about-tittle  ms-3 mt-5"  style={{ position: 'absolute' }}>
+            <h4 className='text-start' style={{marginLeft:"20px",fontSize:"30px"}}>About Us</h4>
+            </div>
             <div className='opacity-image-about'></div>
 
             {/* -------------------------------Modal-Inquiry-form------------------------ */}

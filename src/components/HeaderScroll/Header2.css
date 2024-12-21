@@ -3,7 +3,8 @@
     padding: 0;
 }
 .scond-header {
-    background-color: #F7FAFC;
+    background: linear-gradient(60deg, #02aab0, #00cdac, #26a69a);
+    margin: 0;
 }
 
 .navbar li a {

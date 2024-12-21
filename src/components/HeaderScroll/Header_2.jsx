@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import '../HeaderScroll/Header2.css'
-import Logo from '../../assets/Logo/company1.png'
+import Logo from '../../assets/Logo/Accel.png'
 import { Link, NavLink } from 'react-router-dom'
 
 function Header_2() {
@@ -23,9 +23,9 @@ function Header_2() {
                             <div className="d-flex align-items-center">
                                 <ul className="navbar-nav me-auto">
                                     <li className="nav-item dropdown">
-                                        <Link to="/" className={`nav-link text-dark underline-link-1 ${activeLink === "/" ? "active" : ""}`} aria-expanded="false" onClick={() => handleSetActive("/")}>
+                                        <Link to="/" className={`nav-link text-light underline-link-1 ${activeLink === "/" ? "active" : ""}`} aria-expanded="false" onClick={() => handleSetActive("/")}>
                                             SERVICES
-                                            <i className="fa-solid fa-caret-down ms-2" style={{ color: "#000" }}></i>
+                                            <i className="fa-solid fa-caret-down ms-2" style={{ color: "#fff" }}></i>
                                         </Link>
                                         <ul className="dropdown-menu">
                                             <li>
@@ -41,25 +41,25 @@ function Header_2() {
                                         </ul>
                                     </li>
                                     <li className="nav-item">
-                                        <NavLink to="/career" className={`nav-link text-dark underline-link-1 ${activeLink === "career" ? "active" : ""}`}
+                                        <NavLink to="/career" className={`nav-link text-light underline-link-1 ${activeLink === "career" ? "active" : ""}`}
                                             onClick={() => handleSetActive("career")}>CAREER
                                         </NavLink>
                                     </li>
                                     <li className="nav-item">
-                                        <NavLink to="/about" className={`nav-link text-dark underline-link-1 ${activeLink === "about" ? "active" : ""}`}
+                                        <NavLink to="/about" className={`nav-link text-light underline-link-1 ${activeLink === "about" ? "active" : ""}`}
                                             onClick={() => handleSetActive("about")}>
                                             ABOUT US
                                         </NavLink>
                                     </li>
                                     <li className="nav-item">
-                                        <NavLink to="/contact_us" className={`nav-link text-dark underline-link-1 ${activeLink === "contact_us" ? "active" : ""}`}
+                                        <NavLink to="/contact_us" className={`nav-link text-light underline-link-1 ${activeLink === "contact_us" ? "active" : ""}`}
                                             onClick={() => handleSetActive("contact_us")}>
                                             CONTACT US
                                         </NavLink>
                                     </li>
                                 </ul>
                             </div>
-                            <button type="button" style={{ backgroundColor: "black", border: "none", fontWeight: 'bold', color: "white" }} className="btn btn-warning p-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <button type="button" style={{ backgroundColor: "white", border: "none", fontWeight:700, color: "black" }} className="btn btn-warning p-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 Request a Quote
                             </button>
                         </div>

@@ -1,8 +1,9 @@
 .modal-dialog {
     max-width: 75%;
 }
+
 .modal-back-img {
-    background-image: url('../../assets/Image//employee.jpg');
+    background-image: url('https://images.unsplash.com/photo-1651684195895-38708dc94cfa?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -28,6 +29,7 @@
     justify-content: center;
     position: relative;
 }
+
 .opacity-image-about {
     position: absolute;
     top: 0;
@@ -38,6 +40,7 @@
     z-index: 1;
     pointer-events: none;
 }
+
 .guiding-tittle {
     font-weight: 800;
     font-size: 2.5rem;
@@ -59,10 +62,11 @@
 
 .about-tittle {
     font-weight: 700;
-    font-size:35px;
+    font-size: 35px;
     color: #007bff;
     position: relative;
-    z-index:2;
+    z-index: 2;
+    top: 200px;
 
 }
 
@@ -70,12 +74,11 @@
     content: "";
     position: absolute;
     bottom: -15px;
-    left:4%;
+    left: 50%;
     transform: translateX(-50%);
-    width: 8%;
+    width: 70%;
     height: 5px;
     background-color: rgb(255, 136, 0);
-    z-index: 2;
 }
 
 
@@ -186,7 +189,7 @@
     position: relative;
     left: -60px;
     top: 170px;
-    
+
 }
 
 .carousel-control-next-1 {
@@ -198,7 +201,6 @@
     align-items: center;
 }
 
-
 @media (max-width: 768px) {
     .about-container-1 {
         background-image: url('https://cdn.pixabay.com/photo/2020/04/09/10/15/desk-5020801_960_720.jpg');
@@ -208,8 +210,8 @@
         background-size: cover;
         justify-content: center;
         position: relative;
-        top: -10px;
     }
+
     .opacity-image-about {
         position: absolute;
         top: 0;
@@ -220,6 +222,7 @@
         z-index: 1;
         pointer-events: none;
     }
+
     .guiding-principles {
         background-color: black;
         color: white;
@@ -227,7 +230,7 @@
     }
 }
 
-  
+
 @media (max-width: 576px) {
     .about-container-1 {
         background-image: url('https://cdn.pixabay.com/photo/2020/04/09/10/15/desk-5020801_960_720.jpg');
@@ -237,31 +240,33 @@
         background-size: cover;
         justify-content: center;
         position: relative;
-        top: -10px;
+        top: 0px;
     }
+
     .opacity-image-about {
         position: absolute;
-        top: 0;
+        top: 10px;
         left: 0;
-        height: 50%;
+        height: 50vh;
         width: 100%;
         background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 255, 0));
         z-index: 1;
         pointer-events: none;
     }
+
     .guiding-principles {
         background-color: black;
         color: white;
         margin-top: -10px;
     }
-    
-.carousel-control-prev {
-      display: none;
-}
 
-.carousel-control-next {
-    display: none;
-}
+    .carousel-control-prev {
+        display: none;
+    }
+
+    .carousel-control-next {
+        display: none;
+    }
 }
 
 

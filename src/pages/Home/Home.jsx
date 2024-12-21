@@ -140,81 +140,84 @@ function Home() {
 
 
             {/* ---------------------------Software Development Services--------------------------- */}
-            <div className='heading-services mt-5 '>
-                <h1>Software Development Services</h1>
-            </div>
-            <div className="card-container services me-5" >
-                <div className="card ">
-                    <div className="card-inner ">
-                        <div className="card-front d-flex justify-content-center">
-                            <div className='img-bg'>
-                                <div class="rotation-container">
-                                    <img src="https://www.darkbears.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fadvance-computing.de501c2d.png&w=96&q=75" alt="Main Image" class="main-image" />
-                                    <div class="rotating-dots">
-                                        <div class="dot"></div>
-                                        <div class="dot"></div>
-                                        <div class="dot"></div>
-                                    </div>
+            <div style={{ backgroundColor: "#FBF7F4" }}>
+                <div className='heading-services py-5 '>
+                    <h1>Software Development Services</h1>
+                </div>
+                <div className="card-container services me-5" >
+                    <div className="card ">
+                        <div className="card-inner ">
+                            <div className="card-front d-flex justify-content-center">
+                                <div className='img-bg'>
+                                    <div class="rotation-container">
+                                        <img src="https://www.darkbears.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fadvance-computing.de501c2d.png&w=96&q=75" alt="Main Image" class="main-image" />
+                                        <div class="rotating-dots">
+                                            <div class="dot"></div>
+                                            <div class="dot"></div>
+                                            <div class="dot"></div>
+                                        </div>
 
+                                    </div>
+                                    <div>
+                                        <h3 className="expertise-card-title mt-5">Advanced Computing</h3>
+                                    </div>
                                 </div>
+                            </div>
+                            <div className="card-back">
+                                <h3 className="card-title">Advanced Computing</h3>
+                                <p className="card-description text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio, sit totam ipsum pariatur ex. Earum minus voluptatum ipsa possimus!</p>
+                                <a href="#" className="btn-read">Read More →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="card">
+                        <div className="card-inner">
+                            <div className="card-front d-flex justify-content-center">
                                 <div>
-                                    <h3 className="expertise-card-title mt-5">Advanced Computing</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="card-back">
-                            <h3 className="card-title">Advanced Computing</h3>
-                            <p className="card-description text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio, sit totam ipsum pariatur ex. Earum minus voluptatum ipsa possimus!</p>
-                            <a href="#" className="btn-read">Read More →</a>
-                        </div>
-                    </div>
-                </div>
-                <div className="card">
-                    <div className="card-inner">
-                        <div className="card-front d-flex justify-content-center">
-                            <div>
-                                <div class="rotation-container">
-                                    <img src="https://www.darkbears.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmobile.daa7f32f.png&w=96&q=75" alt="Main Image" class="main-image" />
-                                    <div class="rotating-dots">
-                                        <div class="sec-dot1"></div>
-                                        <div class="sec-dot2"></div>
-                                        <div class="sec-dot3"></div>
+                                    <div class="rotation-container">
+                                        <img src="https://www.darkbears.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmobile.daa7f32f.png&w=96&q=75" alt="Main Image" class="main-image" />
+                                        <div class="rotating-dots">
+                                            <div class="sec-dot1"></div>
+                                            <div class="sec-dot2"></div>
+                                            <div class="sec-dot3"></div>
+                                        </div>
                                     </div>
+                                    <h3 className="expertise-card-title1 mt-5">Mobile &amp; Wearables</h3>
                                 </div>
-                                <h3 className="expertise-card-title1 mt-5">Mobile &amp; Wearables</h3>
-                            </div>
 
-                        </div>
-                        <div className="card-back">
-                            <h3 className="card-title">Mobile &amp; Wearables</h3>
-                            <p className="card-description text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio, sit totam ipsum pariatur ex. Earum minus voluptatum ipsa possimus!</p>
-                            <a href="#" className="btn-read">Read More →</a>
-                        </div>
-                    </div>
-                </div>
-                <div className="card">
-                    <div className="card-inner">
-                        <div className="card-front d-flex justify-content-center">
-                            <div>
-                                <div class="rotation-container">
-                                    <img src="https://www.darkbears.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fweb-ecommerce.b32dfce5.png&w=96&q=75" alt="Main Image" class="main-image" />
-                                    <div class="rotating-dots">
-                                        <div class="thid-dot1"></div>
-                                        <div class="thid-dot2"></div>
-                                        <div class="thid-dot3"></div>
-                                    </div>
-                                </div>
-                                <h3 className="expertise-card-title2 mt-5">Web &amp; Ecommerce</h3>
+                            </div>
+                            <div className="card-back">
+                                <h3 className="card-title">Mobile &amp; Wearables</h3>
+                                <p className="card-description text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio, sit totam ipsum pariatur ex. Earum minus voluptatum ipsa possimus!</p>
+                                <a href="#" className="btn-read">Read More →</a>
                             </div>
                         </div>
-                        <div className="card-back">
-                            <h3 className="card-title">Web &amp; Ecommerce</h3>
-                            <p className="card-description text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio, sit totam ipsum pariatur ex. Earum minus voluptatum ipsa possimus!</p>
-                            <a href="#" className="btn-read">Read More →</a>
+                    </div>
+                    <div className="card">
+                        <div className="card-inner">
+                            <div className="card-front d-flex justify-content-center">
+                                <div>
+                                    <div class="rotation-container">
+                                        <img src="https://www.darkbears.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fweb-ecommerce.b32dfce5.png&w=96&q=75" alt="Main Image" class="main-image" />
+                                        <div class="rotating-dots">
+                                            <div class="thid-dot1"></div>
+                                            <div class="thid-dot2"></div>
+                                            <div class="thid-dot3"></div>
+                                        </div>
+                                    </div>
+                                    <h3 className="expertise-card-title2 mt-5">Web &amp; Ecommerce</h3>
+                                </div>
+                            </div>
+                            <div className="card-back">
+                                <h3 className="card-title">Web &amp; Ecommerce</h3>
+                                <p className="card-description text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio, sit totam ipsum pariatur ex. Earum minus voluptatum ipsa possimus!</p>
+                                <a href="#" className="btn-read">Read More →</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
 
             {/* ---------------------------Software Development Services--------------------------- */}
 
@@ -224,7 +227,7 @@ function Home() {
 
 
 
-            <section className="coursel-slider py-5 " style={{ backgroundColor: "#fff5ee" }}>
+            <section className="coursel-slider py-5 " style={{ backgroundColor: "#fff" }}>
                 <div className="container">
                     <h1 className="text-center mb-4 feature-tittle">Our Expertise</h1>
                     <div id="ExpertiseCarousel" className="carousel slide" data-bs-ride="carousel">
@@ -323,7 +326,7 @@ function Home() {
             {/* ----------------------------Industries We Have Serves-------------------------- */}
 
 
-            <div className="card-section-bg">
+            <div className="card-section-bg" style={{ backgroundColor: "#FBF7F4" }}>
                 <section className="container py-5 mt-5">
                     <h2 className="text-center text-primary mb-4 conte-tittle-1">Industries We Have Serves</h2>
                     <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-4 g-4 justify-content-center mt-5">
@@ -451,8 +454,8 @@ function Home() {
 
 
             {/* ----------------------------Blog----------------------- */}
-            <div className="blog-section mt-5">
-                <div className='blog-tittle mt-5'>
+            <div className="blog-section" style={{ backgroundColor: "#FBF7F4" }}>
+                <div className='blog-tittle py-5'>
                     <h1 style={{ color: "#007bff" }}>Blog</h1>
                 </div>
                 <div className="card-container">

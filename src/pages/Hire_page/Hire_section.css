@@ -2,14 +2,17 @@
     margin: 0;
     padding: 0;
 }
+
 .modal-image img {
     border-radius: 20px;
 }
+
 .modal-dialog {
     max-width: 75%;
 }
+
 .modal-back-img {
-    background-image: url('../../assets/Image//employee.jpg');
+    background-image: url('https://images.unsplash.com/photo-1651684195895-38708dc94cfa?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -39,51 +42,65 @@
 
 .hire-tittle-1 {
     font-weight: 700;
-    font-size:35px;
     color: #007bff;
     position: relative;
-    z-index:2;
+    z-index: 2;
+    top: 200px;
 }
 
 .hire-tittle-1::after {
     content: "";
     position: absolute;
     bottom: -15px;
-    left: 4%;
-    margin-left: 5px;
+    left: 45%;
     transform: translateX(-50%);
-    width: 8%;
+    width: 70%;
     height: 5px;
     background-color: rgb(255, 136, 0);
 }
 
-.opacity-image-1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 50%;
+.hire-container-1 {
+    background-image: url('https://cdn.pixabay.com/photo/2020/04/09/10/15/desk-5020801_960_720.jpg');
+    height: 50vh;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: 1;
-    pointer-events: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    position: relative;
+    top: 0px;
+    margin-top: -8px;
 }
 
-.form-background{
-    background-image: url('https://cdn.pixabay.com/photo/2019/04/16/11/15/job-4131482_1280.jpg');
-    background-size: cover;
-    height: 100vh;
-    background-repeat: no-repeat;
-    position: relative;
-}
-.opacityimage{
+.hire-opacity-image-1 {
     position: absolute;
-    height:100vh;
+    top: 0px;
+    left: 0;
+    height: 50%;
     width: 100%;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 255, 0));
     z-index: 1;
     pointer-events: none;
-    top:352px;
 }
+
+.form-background {
+    /* background-image: url('https://cdn.pixabay.com/photo/2019/04/16/11/15/job-4131482_1280.jpg');
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    position: relative; */
+    background-color: #000000;
+}
+
+.opacityimage {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 255, 0));
+    z-index: 1;
+    pointer-events: none;
+    top: 348px;
+}
+
 .form-section {
     display: flex;
     justify-content: center;
@@ -112,7 +129,7 @@
 
 .form-input {
     border: 2px solid #ffffff;
-    background-color:transparent;
+    background-color: transparent;
     color: #333;
     transition: all 0.3s ease;
 }
@@ -149,42 +166,68 @@
         font-size: 0.9rem;
     }
 
-    .opacityimage{
+    .opacityimage {
         position: absolute;
-        height:100vh;
+        height: 100vh;
         width: 100%;
         background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 255, 0));
         z-index: 1;
         pointer-events: none;
-        top:217px;
+        top: 217px;
     }
 
-    .form-background{
-        background-image: url('https://cdn.pixabay.com/photo/2019/04/16/11/15/job-4131482_1280.jpg');
+    .form-background {
+        /* background-image: url('https://cdn.pixabay.com/photo/2019/04/16/11/15/job-4131482_1280.jpg');
         background-size: cover;
         height: 100vh;
         background-repeat: no-repeat;
-        margin-top: -10px;
+        margin-top: -10px; */
+        background-color: #000000;
+
     }
 }
 
 @media (max-width: 576px) {
-    .opacityimage{
+    .opacityimage {
         position: absolute;
-        height:100vh;
+        height: 100vh;
         width: 100%;
         background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 255, 0));
         z-index: 1;
         pointer-events: none;
-        top:370px;
+        top: 450px;
     }
 
-    .form-background{
-        background-image: url('https://cdn.pixabay.com/photo/2019/04/16/11/15/job-4131482_1280.jpg');
+    .form-background {
+        /* background-image: url('https://cdn.pixabay.com/photo/2019/04/16/11/15/job-4131482_1280.jpg');
         background-size: cover;
         height: 100vh;
         background-repeat: no-repeat;
-        margin-top: -10px;
+        margin-top: -10px; */
+        background-color: #000000;
+
+    }
+
+    .hire-container-1 {
+        background-image: url('https://cdn.pixabay.com/photo/2020/04/09/10/15/desk-5020801_960_720.jpg');
+        height: 50vh;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        justify-content: center;
+        position: relative;
+        top: 0px;
+    }
+
+    .hire-opacity-image-1 {
+        position: absolute;
+        top: 10px;
+        left: 0;
+        height: 50%;
+        width: 100%;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 255, 0));
+        z-index: 1;
+        pointer-events: none;
     }
 }
 
@@ -214,5 +257,3 @@
         height: 260px;
     }
 }
-
-

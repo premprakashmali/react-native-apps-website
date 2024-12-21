@@ -89,7 +89,7 @@ function Header() {
                                     </li>
                                 </ul>
                             </div>
-                            <button type="button" style={{ backgroundColor: "black", border: "1px solid #FFFFFF", fontWeight: 800, color: "#FFFFFF" }} className="btn btn-warning p-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <button type="button" style={{ backgroundColor: "black", border: "1px solid #FFFFFF", fontWeight: 700, color: "#FFFFFF" }} className="btn btn-warning p-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 Request a Quote
                             </button>
                         </div>

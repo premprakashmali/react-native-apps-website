@@ -41,12 +41,9 @@ function Career() {
                     <Header_2 />
 
                 </div>
-
-                <div className="career-tittle  ms-3 mt-5" style={{}}>
-                    <h4 className='career-tittle'>Career</h4>
-                </div>
-
-
+            </div>
+            <div className="career-tittle ms-5 mt-5" style={{ position: 'absolute' }}>
+                <h4 className='text-start' style={{marginLeft:"-20px",fontSize:"30px"}}>Career</h4>
             </div>
 
             <div className='opacity-image-1'></div>
@@ -54,47 +51,47 @@ function Career() {
             {/* -------------------------------Modal-Inquiry-form------------------------ */}
 
             <div className="modal fade" id="exampleModal" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div className="modal-dialog modal-dialog-centered modal-xl">
-                        <div className="modal-content">
-                            <div className="modal-body p-4">
-                                <button type="button" className="btn-close rounded-2 p-2" data-bs-dismiss="modal" aria-label="Close" style={{ position: "absolute", top: "15px", right: "15px", backgroundColor: "#fff", }}></button>
-                                <div className="row g-4">
-                                    <div className="col-lg-6 col-md-12 d-flex ">
-                                        <div className="modal-back-img"></div>
-                                    </div>
-                                    <div className="col-lg-6 col-md-8">
-                                        <div className="query-form">
-                                            <h4 className="mb-4">Please Enter Your Inquiry</h4>
-                                            <form className="row g-3">
-                                                <div className="col-md-6">
-                                                    <input type="text" className="form-control" placeholder="First Name" />
-                                                </div>
-                                                <div className="col-md-6">
-                                                    <input type="text" className="form-control" placeholder="Last Name" />
-                                                </div>
-                                                <div className="col-12">
-                                                    <input type="email" className="form-control" placeholder="Email Address" />
-                                                </div>
-                                                <div className="col-12">
-                                                    <input type="text" className="form-control" placeholder="Mobile Number" />
-                                                </div>
-                                                <div className="col-12">
-                                                    <textarea className="form-control" rows="4" placeholder="Your Message"></textarea>
-                                                </div>
+                <div className="modal-dialog modal-dialog-centered modal-xl">
+                    <div className="modal-content">
+                        <div className="modal-body p-4">
+                            <button type="button" className="btn-close rounded-2 p-2" data-bs-dismiss="modal" aria-label="Close" style={{ position: "absolute", top: "15px", right: "15px", backgroundColor: "#fff", }}></button>
+                            <div className="row g-4">
+                                <div className="col-lg-6 col-md-12 d-flex ">
+                                    <div className="modal-back-img"></div>
+                                </div>
+                                <div className="col-lg-6 col-md-8">
+                                    <div className="query-form">
+                                        <h4 className="mb-4">Please Enter Your Inquiry</h4>
+                                        <form className="row g-3">
+                                            <div className="col-md-6">
+                                                <input type="text" className="form-control" placeholder="First Name" />
+                                            </div>
+                                            <div className="col-md-6">
+                                                <input type="text" className="form-control" placeholder="Last Name" />
+                                            </div>
+                                            <div className="col-12">
+                                                <input type="email" className="form-control" placeholder="Email Address" />
+                                            </div>
+                                            <div className="col-12">
+                                                <input type="text" className="form-control" placeholder="Mobile Number" />
+                                            </div>
+                                            <div className="col-12">
+                                                <textarea className="form-control" rows="4" placeholder="Your Message"></textarea>
+                                            </div>
 
-                                                <div className="col-12 d-flex justify-content-end">
-                                                    <button style={{ backgroundColor: "#000", border: "none", fontWeight: 800, }} type="submit" className="btn btn-primary text-light rounded-5 px-4 py-2" >
-                                                        Send Inquiry
-                                                    </button>
-                                                </div>
-                                            </form>
-                                        </div>
+                                            <div className="col-12 d-flex justify-content-end">
+                                                <button style={{ backgroundColor: "#000", border: "none", fontWeight: 800, }} type="submit" className="btn btn-primary text-light rounded-5 px-4 py-2" >
+                                                    Send Inquiry
+                                                </button>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
             {/* -------------------------------Modal-Inquiry-form------------------------ */}
             <div style={{ backgroundColor: "black" }}>
                 <div className="career-main-container text-center py-5">
@@ -103,7 +100,7 @@ function Career() {
                         <p className="career-subtitle mb-4">
                             Exciting opportunities are just around the corner. Keep an eye out for our latest updates and join us on our journey!
                         </p>
-                        <img src={staytune} className="img-fluid img-posting card-img-top rounded mb-4" alt="Stay Tuned Image"/>
+                        <img src={staytune} className="img-fluid img-posting card-img-top rounded mb-4" alt="Stay Tuned Image" />
                         <div className="action-buttons">
                             <button className="btn btn-outline">Explore Careers</button>
                             <button className="btn btn-outline ms-3">Get Notified</button>
