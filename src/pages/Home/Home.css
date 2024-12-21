@@ -24,6 +24,7 @@
     background-color: rgba(0, 0, 0, 0.667);
     z-index: 1;
     pointer-events: none;
+    margin-top: -10px;
 }
 
 .section-conatin {

@@ -110,3 +110,11 @@
   }
 
 /* ---------------------------underline link css----------------------- */
+
+@media only screen and (max-width: 576px) {
+
+    .scond-header {
+        background: linear-gradient(60deg, #02aab0, #00cdac, #26a69a);
+        margin: 0;
+    }
+}
